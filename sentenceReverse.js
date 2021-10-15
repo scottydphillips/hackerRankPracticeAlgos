@@ -4,6 +4,7 @@ const isNotString = (arg) => !isString(arg);
 const reverseSentence = (sentence) => {
 	if(isNotString(sentence)) {
 		console.log('Must have valid input');
+		return;
 	}
 	let split = sentence.split(' ');
 	if(split.length < 2) {
