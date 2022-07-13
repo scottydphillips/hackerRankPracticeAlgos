@@ -1,4 +1,4 @@
-function bon_appetit($bill, $k, $b) {
+<?php function bon_appetit($bill, $k, $b) {
   $total = 0;
   foreach ($bill as $item) {
     $total = $item + $total;

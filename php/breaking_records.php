@@ -1,4 +1,4 @@
-function breakingRecords($scores) {
+<?php function breakingRecords($scores) {
   $min = $scores[0];
   $min_count = 0;
   $max = $scores[0];

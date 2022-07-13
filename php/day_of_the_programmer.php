@@ -1,4 +1,4 @@
-function day_of_the_programmer($year) {
+<?php function day_of_the_programmer($year) {
   if ($year == 1918) {
     return '26.09.1918';
   }

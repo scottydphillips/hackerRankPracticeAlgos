@@ -1,4 +1,4 @@
-function migratory_birds($arr) {
+<?php function migratory_birds($arr) {
   $type_one = [];
   $type_two = [];
   $type_three = [];
