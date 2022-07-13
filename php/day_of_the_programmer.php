@@ -9,7 +9,7 @@ function day_of_the_programmer($year) {
       return '13.09.' . $year; 
     }
   } else {
-    if ($year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+    if ($year % 400 == 0 || ($year % 4 == 0 && $year % 100 != 0)) {
       return '12.09.' . $year;
     } else {
       return '13.09.' . $year;
