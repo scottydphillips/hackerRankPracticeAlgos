@@ -1,6 +1,9 @@
 # Hacker Rank Algorithm Practice
 
-These are some of the algorithms I've completed from Hacker Rank in preparation for technical screening interviews for Junior Developer positions.
+These are some of the algorithms I've completed from Hacker Rank in preparation for technical screening interviews for Developer positions. Solutions are only posted once all Hacker Rank test cases have passed.
+
+## Implementation
+Solutions are in JavaScript and PHP as I currently work in a WordPress environment. Logic is the same between both solutions, only the syntax is changed to match the language.
 
 ## Feedback
 
