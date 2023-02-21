@@ -3,6 +3,7 @@ js/formingMagicSquare.js
 js/correctnessInvariant.js
 js/sherlockAndTheBeast.js
 js/generateColorString.js
+js/dateAdder.js
 php/extra_long_factorials.php
 python/jumping_on_clouds.py
 python/funny_string.py
