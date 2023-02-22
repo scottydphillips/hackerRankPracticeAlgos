@@ -3,7 +3,7 @@ We consider two strings to be anagrams of each other if the first string's lette
 
 Alice is taking a cryptography class and finding anagrams to be very useful. She decides on an encryption scheme involving two large strings where encryption is dependent on the minimum number of character deletions required to make the two strings anagrams. Can you help her find this number?
 
-Given two strings,  and , that may not be of the same length, determine the minimum number of character deletions required to make s1 and s2 anagrams. Any characters can be deleted from either of the strings.
+Given two strings, s1 and s2, that may not be of the same length, determine the minimum number of character deletions required to make s1 and s2 anagrams. Any characters can be deleted from either of the strings.
 */
 
 anagrams = (s1, s2) => {
@@ -26,7 +26,7 @@ anagrams = (s1, s2) => {
   console.log('s2map', s2map);
   for (let key in map) {
     if (s1map.hasOwnProperty(key) && s2map.hasOwnProperty(key)) {
-      map[key] = Math.abs(s1map[key] - Math.abs(s2map[key]));
+      map[key] = Math.abs(s1map[key] - s2map[key]);
     }
     sum += map[key];
   }
