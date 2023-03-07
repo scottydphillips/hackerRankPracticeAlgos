@@ -64,6 +64,6 @@ timeInWords = (h, m) => {
   return `${toWords(m)} ${pastOrTo(m)} ${toWords(h)}`; 
 }
 
-console.log('example0', timeInWords(5, 47)) // Thirteen to six
-console.log('example1', timeInWords(3, 00)) // Three o' clock
-console.log('example2', timeInWords(7, 15)) // Quarter past seven
+console.log('example0', timeInWords(5, 47)) // thirteen minutes to six
+console.log('example1', timeInWords(3, 00)) // three o' clock
+console.log('example2', timeInWords(7, 15)) // quarter past seven
