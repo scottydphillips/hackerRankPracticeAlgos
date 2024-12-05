@@ -48,3 +48,4 @@ function QuestionsMarks(str) {
 
 console.log('testCase1', QuestionsMarks('aa6?9')) // False
 console.log('testCase2', QuestionsMarks('acc?7??sss?3rr1??????5')) // True
+console.log('testCase3', QuestionsMarks("9???1???9??1???9")) // false

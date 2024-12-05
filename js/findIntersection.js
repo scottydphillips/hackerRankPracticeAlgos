@@ -3,37 +3,31 @@ Have the function FindIntersection(strArr) read the array of strings stored in s
 */
 function FindIntersection(strArr) {
   let returnArray = [];
-  let contents = {};
-  strArr.forEach((str, idx) => {
-    let split = str.split(',');
-    console.log('split', split);
-    split.forEach((s) => {
-      s.replace(' ', '');
-      if (contents.hasOwnProperty(s)) {
-        contents[s]++;
-      } else {
-        contents[s] = 1;
+  let arr1 = strArr[0].split(',');
+  arr1 = arr1.map((el) => el.replaceAll(' ', ''));
+  console.log('arr1', arr1);
+  let arr2 = strArr[1].split(',');
+  arr2 = arr2.map((el) => el.replaceAll(' ', ''));
+  console.log('arr2', arr2);
+  arr1.forEach((el, idx) => {
+    arr2.forEach((e, i) => {
+      if (e === el) {
+        console.log('el', el);
+        console.log('e', e);
+        returnArray.push(el);
       }
-    })
-    console.log('contents', contents);
+    });
   });
-
-  for (let content in contents) {
-    console.log('content', contents[content]);
-    if (contents[content] > 1) {
-      returnArray.push(content);
-    } 
-  }
-  returnArray.sort((a,b) => a - b)
   console.log('returnArray', returnArray);
   if (returnArray.length) {
-    returnArray = returnArray.join(',').replaceAll(' ', '');
-    console.log('returnArray type', typeof returnArray);
-    return returnArray;
+    return returnArray.join(',');
   } else {
-    return 'false';
+    return "false";
   }
 }
 
-console.log('testCase1',FindIntersection(['1, 3, 4, 7, 13', '1, 2, 4, 13, 15'])) // 1, 4, 13
-console.log('testCase2', FindIntersection(['1,3,9,10,17,18', '1,4,9,10'])) // 1, 9, 10
+// console.log('testCase1',FindIntersection(['1, 3, 4, 7, 13', '1, 2, 4, 13, 15'])) // 1, 4, 13
+// console.log('testCase2', FindIntersection(['1,3,9,10,17,18', '1,4,9,10'])) // 1, 9, 10
+console.log('testCase3', FindIntersection(["1, 5, 6, 7, 10, 11, 12", "5, 6, 8, 11, 17"])); // 5, 6, 11
+// console.log('testCase4', FindIntersection(['2, 3, 4,', '3'])); // 3
+// console.log('testCase5', FindIntersection(["1, 2, 4, 5, 6, 9", "2, 3, 4, 8, 10"])) // 2, 4

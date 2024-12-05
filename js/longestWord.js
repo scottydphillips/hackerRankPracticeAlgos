@@ -9,7 +9,7 @@ function LongestWord(sen) {
   split.forEach((word) => {
     if (word.match(/[^a-zA-Z\d\s:]/g)) {
       console.log('matched', word);
-      word = word.replace(/[^a-zA-Z\d\s:]/g, '');
+      word = word.replace(/[^a-zA-Z\d\s]/g, '');
       console.log('replaced', word);
     }
     if (word.length > longest.length) {
@@ -21,3 +21,4 @@ function LongestWord(sen) {
 
 console.log('testCase1', LongestWord("fun&!! time"));
 console.log('testCase2', LongestWord("I love dogs"));
+console.log('testCase3', LongestWord("a confusing /:sentence:/[ this is not!!!!!!!~"));
